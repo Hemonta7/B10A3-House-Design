@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -21,8 +21,44 @@
 </head>
 
 <body class="font-manrope">
-    <header>
-
+    <header class="h-screen bg-gradient-to-t from-white to-[rgba(29,28,28,0.068)]">
+        <!-- nabbar  -->
+        <nav class=" container mx-auto py-5 lg:py-10">
+            <div class="navbar justify-between items-center">
+                <div class="navbar-start">
+                    
+                    <a class="text-xl font-bold"><i class="fa-solid fa-arrow-right -rotate-45 bg-common-color rounded-full p-1 mr-3"></i>Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu-horizontal px-1 space-x-11">
+                        <li class="text-base font-extrabold"><a>Home</a></li>
+                        <li class="text-base text-gray-600 font-medium"><a>Services</a></li>
+                        <li class="text-base text-gray-600 font-medium"><a>Portfolio</a></li>
+                        <li class="text-base text-gray-600 font-medium"><a>Blogs</a></li>
+                        <li class="text-base text-gray-600 font-medium"><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end hidden lg:flex gap-4">
+                    <a href=""><i class="fa-solid fa-magnifying-glass bg-white rounded-full p-2"></i></a>
+                    <a href=""><i class="fa-solid fa-cart-shopping bg-white rounded-full p-2"></i></a>
+                    <a class="btn text-black bg-common-color rounded-full border-none">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 text-white border-1 bg-black rounded-full p-1"></i></a>
+                </div>
+                <div class="dropdown ">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden rounded-full bg-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-28 p-2 shadow right-0">
+                        <li class="text-base font-extrabold"><a>Home</a></li>
+                        <li class="text-base text-gray-600 font-medium"><a>Services</a></li>
+                        <li class="text-base text-gray-600 font-medium"><a>Portfolio</a></li>
+                        <li class="text-base text-gray-600 font-medium"><a>Blogs</a></li>
+                        <li class="text-base text-gray-600 font-medium"><a>Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
 
@@ -30,6 +66,8 @@
     <footer>
 
     </footer>
+    <!-- font awesome cdn  -->
+    <script src="https://kit.fontawesome.com/f3d1f714a3.js" crossorigin="anonymous"></script>
     <script>
         tailwind.config = {
             theme: {
